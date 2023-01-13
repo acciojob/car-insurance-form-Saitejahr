@@ -8,12 +8,12 @@
 
 <body>
 	<!-- the entire body must be written by student -->
-	<form method="post">
+<!-- 	<form method="post">
 		<label for="Name">Name</label>
-		<input type="text" id="name">
+		<input type="text" id="name" required>
 		<br>
 		<label for="Email">Email</label>
-		<input type="email" id="email">
+		<input type="email" id="email" required>
 		<br>
 		<label for="Gender">Gender</label>
 		<input type="radio" id="male">Male
@@ -27,15 +27,49 @@
 		</select>
 		<br>
 		<label for="Car Age">Car Age</label>
-		<input type="number" id="carage">
+		<input type="number" id="carage" required>
 		<br>
 		<label for="Date of purchase">Date of Purchase</label>
-		<input type="date" id="dop">
+		<input type="date" id="dop" required>
 		<br>
 		<label for="password">Password</label>
-		<input type="password" id="password">
+		<input type="password" id="password" required>
 		<br>
 		<input type="submit" id="submit">	
+	</form> -->
+	<form method="post">
+		<!--name-->
+	    <label for="name">Name</label>
+	    <input id="name" type="text" required><br><br>
+		<!--email-->
+		<label for="email">Email</label>
+	    <input id="email"type="email" required><br><br>
+		<!--gender-->
+		<label for="gender">Gender</label>
+		<input type="radio" name="gender" required>male
+		<input type="radio"name="gender" required>female<br><br>
+		<!--car brands-->
+		<label for="cars">Car Brands</label>
+		<select name="cars" id="cars">
+  
+  <option value="BMW">BMW</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option>
+</select>
+
+		<!--carage-->
+		<label for="carage">Car Age</label>
+		<input id="carage"type="number"min="0"max="20"placeholder="years" required>
+		<input id="carage"type="number"min="0"max="11"placeholder="months"required>
+		<br><br>
+		<!--date of purchse-->
+		<label for="dop">Date of Purchase(dop)</label>
+		<input id="dop" type="date" max="2023-01-10"required><br><br>
+		<!--password-->
+		<label for="password">Password</label>
+		<input id="password" type="password"required><br><br>
+		<!--sumbit-->
+		<button type="submit" >submit button</button>
 	</form>
     <script type="text/javascript" src="./script.js">
 </script>
